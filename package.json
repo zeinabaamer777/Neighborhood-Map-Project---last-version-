@@ -1,0 +1,25 @@
+{
+  "name": "neighborhood-map--master",
+  "version": "1.0.0",
+  "description": "UDACITY neighbohood map project",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeinabaamer777/Neighborhood-Map-Project-last-version-.git"
+  },
+  "author": "Zeinab Aamer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zeinabaamer777/Neighborhood-Map-Project-last-version-/issues"
+  },
+  "homepage": "https://github.com/zeinabaamer777/Neighborhood-Map-Project-last-version-#readme"
+}

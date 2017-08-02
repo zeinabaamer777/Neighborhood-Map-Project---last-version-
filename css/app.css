@@ -1,0 +1,27 @@
+@font-face {src: url(../fonts/RobotoLight.ttf);font-family: RobotoLight;font-weight: 2000;font-size: 100}
+@font-face {font-family: vevey;src: url(../fonts/vevey.ttf);font-weight: 400}
+@font-face {font-family: IsabelleLayne;src: url(../fonts/IsabelleLayne.ttf);font-weight: 400}
+* {Box-sizing: Border-box}
+a,li,ol,ul {list-style: none;text-decoration: none}
+html {width: 100%}
+body {padding: 0;width: 100%}
+li {-webkit-transition: all .3s ease-in 0s;-moz-transition: all .3s ease-in 0s;-ms-transition: all .3s ease-in 0s;-o-transition: all .3s ease-in 0s;transition: all .3s ease-in 0s}
+.container {background-color: #f3f1ed}
+.header {background-color: #4d7b98;padding-bottom: 10px}
+.header-title {color: #ece8dd}
+.header-title h1 {font-weight: bolder;font-family: IsabelleLayne;font-size: 2em;letter-spacing: .15em;text-shadow: #ccc 1px 0 3px; text-transform: uppercase;line-height: 1.2em;text-align: center;}
+.search-box {color: #f7584c;text-transform: uppercase;background-color: #f3f1ed;padding-left: 10px;margin-left: 25px;position: relative;width: 200px;height: 40px;margin-top: 30px;border-radius: 3px;font-weight: bolder;font-family: IsabelleLayne;font-size: 1.3em;letter-spacing: .1em;line-height: 3em;}
+.search input::-webkit-input-placeholder {color: #4d7b98}
+#map {width: 100%;overflow: hidden;position: relative;padding: 0;margin: 0;margin-top: 30px;background-color: #fff; text-align: center;height: 800px;}
+.LIST {position: relative;height: 800px;background-color: #4d7b98;margin-top: 30px}
+#cofeesList {color: #4d7b98;background-color: #4d7b98;font-family: RobotoLight;font-weight: bolder;position: relative;overflow: hidden;}
+#cofeesList li:hover {color: #f7584c;background-color: #4d7b98}
+#cofeesList .items-list {margin-left: -70px;margin-top: 22px;text-transform: uppercase; font-size: 1.2em;background-color: #f3f1ed;padding: 5px;padding-left: 40px;cursor: pointer;}
+
+@media only screen and (max-width:959px) {.header {height: 80px}.header-title h1 {font-size: 26px;margin: 0 auto;margin-left: 47px;letter-spacing: 0;}
+    #cofeesList .items-list {font-size: 15px;margin-top: 20px}.search-box {font-size: 18px;margin: 0 auto;margin-left: 40px;}
+    .LIST {padding-top: 20px;height: 700px}#map {width: 100%;}}
+
+@media only screen and (max-width:768px) {.header-title {float: none}.header-title h1,.search-box {font-size: 20px;margin-right: auto;margin-left: auto;display: block;}
+    .header-title h1 {text-align: center;padding-bottom: 20px;padding-top: 20px}.LIST {padding-top: 20px;margin-top: 2px;}
+    .mapp {margin-top: -30px}#map {width: 100%}#cofeesList .items-list {margin-top: 17px;}
