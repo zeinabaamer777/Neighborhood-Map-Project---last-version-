@@ -63,7 +63,7 @@ var modelLocation=[{title:"espresso lab",location:{lat:30.020943,lng:31.494939}}
          google.maps.event.trigger(cofeeList.marker, 'click');
          cofeeList.marker.setAnimation(google.maps.Animation.DROP);
      };
- }
+ };
  var foursquareData = function(data) {
      //Thanks Sarah and karol From Udacity forums, 
      //I was really obessed with this part of code, Thanks for Them 
