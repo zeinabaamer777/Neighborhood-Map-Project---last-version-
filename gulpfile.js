@@ -5,8 +5,8 @@ var cssMin = require('gulp-css');
 
 gulp.task('css',function () {
 	gulp.src([
-     './css/app.css',
      './css/bootstrap.min.css',
+     './css/app.css',
 	])
 	.pipe(concat('libs-style.css'))
 	.pipe(cssMin())
@@ -16,9 +16,10 @@ gulp.task('css',function () {
 gulp.task('scripts',function () {
 	gulp.src([
      './js/app.js',
-     './js/bootstrap.min.js',
      './js/jquery-1.12.0.min.js',
      './js/knockout.js',
+     './js/bootstrap.min.js',
+     
     ])
     .pipe(concat('libs.js'))
     .pipe(uglify())
