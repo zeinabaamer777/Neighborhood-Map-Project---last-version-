@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>UDACITY Map project</title>
     <link rel="stylesheet" href="css/libs-style.css">
 </head>
-
 <body>
-
     <section class="container">
         <div class="row">
             <div class="col-md-12 header header-title">
@@ -35,9 +32,8 @@
 
     <!-- SCRIPTS  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src='js/libs.js'></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8Y_t0Z1wyZn65D1ha3Argd53gqztbeUU&callback=MapInit">
-    </script>
+    <script src='js/libs.js'></script> 
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8Y_t0Z1wyZn65D1ha3Argd53gqztbeUU&callback=MapInit" onerror="googleCallBack()"></script>
 </body>
 
 </html>
