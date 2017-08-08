@@ -235,8 +235,8 @@
                 var seaRESULT = Item.title.toLowerCase().search(searchFilter);
                 Item.marker.setVisible(true);
                 if (seaRESULT >= 0) {
-                    return true;
                     Item.marker.setVisible(true);
+                    return true;
                 } else {
                     Item.marker.setVisible(false);
                     Item.infoWindow.close();
