@@ -10,7 +10,7 @@ this is a single-page application featuring a map of my favourite cofee shops, t
 - Run gulp build or whatever task you have
 -Test it out Run the gulp command in your project directory: via command gulp 
 
-### the result will be like this :
+-the result will be like this :
 Using gulpfile ~/my-project/gulpfile.js
 [11:15:51] Starting 'default'...
 [11:15:51] Finished 'default' after 103 μs
