@@ -250,6 +250,7 @@
     self.clickHandler = function(cofeeList) {
         google.maps.event.trigger(cofeeList.marker, 'click');
         cofeeList.marker.setAnimation(google.maps.Animation.DROP);
+        cofeeList.marker.setVisible(true);
     };
  };
  var foursquareData = function(data) {
