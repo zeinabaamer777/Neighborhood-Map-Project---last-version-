@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>UDACITY Map project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UDACITY Map project</title>
+    <link rel="stylesheet" href="css/libs-style.css">
 </head>
+
 <body>
-	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<link href="css/libs-style.css" rel="stylesheet">
-	<header class="col-md-12 header header-title">
-		<h1>favourite Cofee Shops</h1>
-	</header>
-	<section class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="col-md-9 mapp">
-					<div id="map"></div>
-				</div><!-- start list part -->
-				<div class="col-md-3 LIST">
-					<!-- search part -->
-					<div class="search">
-						<input class="search-box" data-bind="textInput: searchItem" placeholder="Search your cofee" size="20" type="text">
-					</div>
-					<ul data-bind="foreach: filteredCofee" id="cofeesList">
-						<li class="items-list" data-bind="text: title, click:$root.clickHandler"></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section><!-- SCRIPTS  -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-	</script> 
-	<script src='js/libs.js'>
-	</script> 
-	<script async defer onerror="googleCallBack()" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8Y_t0Z1wyZn65D1ha3Argd53gqztbeUU&callback=MapInit">
-	</script>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-12 header header-title">
+                <h1>favourite Cofee Shops</h1>
+            </div>
+            
+                <div class="col-sm-9 mapp">
+                    <div id="map"></div>
+                </div>
+                <!-- start list part -->
+                <div class="col-sm-3 LIST">
+                    <!-- search part -->
+                    <div class="search">
+                        <input type="text" class="search-box" size="20" data-bind="textInput: searchItem" placeholder="Search your cofee">
+                    </div>
+                    <ul id="cofeesList" data-bind="foreach: filteredCofee">
+                        <li class="items-list" data-bind="text: title, click:$root.clickHandler"></li>
+                    </ul>
+                </div>
+           
+        </div>
+    </section>
+
+    <!-- SCRIPTS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='js/jquery-1.12.0.min.js'></script>
+    <script src='js/knockout.js'></script>
+    <script src='js/bootstrap.min.js'></script>
+    <script src='js/app.js'></script> 
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8Y_t0Z1wyZn65D1ha3Argd53gqztbeUU&callback=MapInit" onerror="googleCallBack()">
+    </script>
 </body>
-</html>
+
+</html> 
